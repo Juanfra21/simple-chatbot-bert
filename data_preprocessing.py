@@ -2,8 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 def load_data():
-    df = pd.read_csv('https://raw.githubusercontent.com/Juanfra21/simple-chatbot-bert/main/intent_text.csv')
-    df_response = pd.read_csv('https://raw.githubusercontent.com/Juanfra21/simple-chatbot-bert/main/intent_response.csv')
+    df = pd.read_csv('data/intent_text.csv')
+    df_response = pd.read_csv('data/intent_response.csv')
     return df, df_response
 
 def preprocess_data(df):
